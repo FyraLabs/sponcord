@@ -93,7 +93,7 @@ githubWebhooks.on('sponsorship', async ({ payload }) => {
 		embed.setAuthor({
 			name: sponsor.name ? `${sponsor.name} (@${sponsor.login})` : (sponsor.login ?? 'Unknown'),
 			iconURL: sponsor.avatar_url,
-			url: sponsor.url,
+			url: sponsor.html_url,
 		});
 	}
 
